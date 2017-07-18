@@ -12,7 +12,7 @@ build:
 
         - script:
             name: debug golang
-            code: golang version
+            code: go version
 
         - script:
             name: debug src
