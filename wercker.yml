@@ -8,7 +8,18 @@ build:
 
         - script:
             name: force updating of go tools
-            code: rm -rf $GOPATH/src/golang.org/x/tools/
+            code: rm -rf $GOPATH/src/golang.org/x/tools
+
+        - script:
+            name: debug golang
+            code: golang version
+
+        - script:
+            name: debug src
+            code: |
+               ls -la $GOPATH/src/
+               ls -la $GOPATH/src/golang.org/
+               ls -la $GOPATH/src/golang.org/x/
 
         - script:
             name: fetch golint
