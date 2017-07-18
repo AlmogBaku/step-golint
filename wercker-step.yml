@@ -1,6 +1,9 @@
 name: golint
-version: 1.3.0
+version: 1.4.0
 description: Step to run golint
 keywords:
   - golang
+  - go
   - golint
+  - lint
+
