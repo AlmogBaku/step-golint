@@ -8,7 +8,7 @@ build:
 
         - script:
             name: fetch tools
-            code: go get -u golang.org/x/tools  
+            code: go get -d -u golang.org/x/tools  
 
         - script:
             name: fetch golint
