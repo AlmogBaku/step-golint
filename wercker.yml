@@ -7,7 +7,7 @@ build:
         - setup-go-workspace
 
         - script:
-            name: fetch tools
+            name: fetch golang tools
             code: go get -d -u golang.org/x/tools  
 
         - script:
