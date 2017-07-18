@@ -7,8 +7,8 @@ build:
         - setup-go-workspace
 
         - script:
-            name: fetch golang tools
-            code: go get -d -u golang.org/x/tools  
+            name: force updating of go tools
+            code: rm -rf $GOPATH/src/golang.org/x/tools/
 
         - script:
             name: fetch golint
