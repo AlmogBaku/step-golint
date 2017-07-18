@@ -1,25 +1,10 @@
-box: wercker/golang
+box: golang
 
 build:
     steps:
         - shellcheck
 
         - setup-go-workspace
-
-        - script:
-            name: force updating of go tools
-            code: rm -rf $GOPATH/src/golang.org/x/tools
-
-        - script:
-            name: debug golang
-            code: go version
-
-        - script:
-            name: debug src
-            code: |
-               ls -la $GOPATH/src/
-               ls -la $GOPATH/src/golang.org/
-               ls -la $GOPATH/src/golang.org/x/
 
         - script:
             name: fetch golint
